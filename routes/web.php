@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('profile', function() {
+    // 認証済みのユーザのみが入れる
+})->middleware('auth');
