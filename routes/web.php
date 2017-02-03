@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 });
 
 Auth::routes();
@@ -20,5 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('profile', function() {
-    // 認証済みのユーザのみが入れる
+  // 認証済みのユーザのみが入れる
 })->middleware('auth');
+
+  Route::resource('talent', 'TalentController');
+  Route::resource('office', 'OfficeController');
