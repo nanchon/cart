@@ -11,6 +11,9 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
   <!-- Styles -->
+  <link href="/css/app.css" rel="stylesheet">
+
+  <!-- Styles -->
   <style>
     html, body {
       background-color: #fff;
@@ -19,6 +22,7 @@
       font-weight: 100;
       height: 100vh;
       margin: 0;
+      background-image: url(https://cdn-images-1.medium.com/max/2000/1*MNk9YXGMsUyyxYlyZf73lw.jpeg);
     }
 
     .full-height {
@@ -74,16 +78,57 @@
     @endif
 
     <div class="content">
-      <div class="title m-b-md">
-        Laravel
+      <div class="jumbotron" style="background: none;color:#fff;">
+        <h1 style="font-weight: 100;">list sample</h1>
       </div>
-
+      <div class="jumbotron" style="text-align: left;padding-left: 130px;background: rgba(0,0,0,.175);color:#fff;">
+        <div class="h3">
+          <div class="">
+            <div class="checkbox">
+              <label style="font-weight: 100;">
+                <input type="checkbox" id="" checked="checked">
+                Relation
+              </label>
+            </div>
+          </div>
+          <div class="">
+            <div class="checkbox">
+              <label style="font-weight: 100;">
+                <input type="checkbox" id="" checked="checked">
+                pager
+              </label>
+            </div>
+          </div>
+          <div class="">
+            <div class="checkbox">
+              <label style="font-weight: 100;">
+                <input type="checkbox" id="">
+                sort
+              </label>
+            </div>
+          </div>
+          <div class="">
+            <div class="checkbox">
+              <label style="font-weight: 100;">
+                <input type="checkbox" id="">
+                search
+              </label>
+            </div>
+          </div>
+          <div class="">
+            <div class="checkbox">
+              <label style="font-weight: 100;">
+                <input type="checkbox" id="">
+                flash message
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p><a class="btn btn-primary btn-lg" href="talent" role="button">　sample　</a></p>
       <div class="links">
-        <a href="https://laravel.com/docs">Documentation</a>
-        <a href="https://laracasts.com">Laracasts</a>
-        <a href="https://laravel-news.com">News</a>
-        <a href="https://forge.laravel.com">Forge</a>
-        <a href="https://github.com/laravel/laravel">GitHub</a>
+        <a href="https://medium.com/nanchoso-weblog">nanchoso@Midium</a>
+        <a href="https://github.com/nanchon/cart">nanchon@GitHub</a>
       </div>
     </div>
   </div>

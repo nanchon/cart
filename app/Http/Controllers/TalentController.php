@@ -9,7 +9,8 @@ class TalentController extends Controller
 {
   public function index()
   {
-    $talents = Talent::all();
+    // $talents = Talent::all();
+    $talents = Talent::paginate(7);
     return view('talent', ['talents' => $talents]);
   }
 }

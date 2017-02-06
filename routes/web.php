@@ -19,9 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('profile', function() {
-  // 認証済みのユーザのみが入れる
-})->middleware('auth');
-
+Route::group(['middleware' => 'auth'], function()
+{
   Route::resource('talent', 'TalentController');
   Route::resource('office', 'OfficeController');
+});

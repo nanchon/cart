@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <div class="alert alert-info" role="alert">ログインに成功しました。<a href="/talent">一覧へ</a></div>
+      <div class="alert alert-info" role="alert">ログインに成功しました。<a href="/talent">サンプルへ</a></div>
     </div>
   </div>
   <div class="row">

@@ -4,13 +4,15 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h1 class="">一覧</h1>
+      <div class="text-right">
+{!! $talents->total().'　件　　' !!}
+      </div>
       <div class="panel-body">
         <table class="table table-striped task-table">
           <thead>
-            <th>名前</th>
-            <th>性別</th>
-            <th>事務所</th>
+            <th>name</th>
+            <th>sex</th>
+            <th>office</th>
           </thead>
           <tbody>
           @foreach ($talents as $talent)
@@ -28,6 +30,9 @@
           @endforeach
           </tbody>
         </table>
+      </div>
+      <div class="text-center">
+{!! $talents->links() !!}
       </div>
     </div>
   </div>
