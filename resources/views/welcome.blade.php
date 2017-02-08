@@ -102,15 +102,7 @@
           <div class="">
             <div class="checkbox">
               <label style="font-weight: 100;">
-                <input type="checkbox" id="">
-                sort
-              </label>
-            </div>
-          </div>
-          <div class="">
-            <div class="checkbox">
-              <label style="font-weight: 100;">
-                <input type="checkbox" id="">
+                <input type="checkbox" id="" checked="checked">
                 search
               </label>
             </div>
@@ -118,8 +110,16 @@
           <div class="">
             <div class="checkbox">
               <label style="font-weight: 100;">
-                <input type="checkbox" id="">
+                <input type="checkbox" id="" checked="checked">
                 flash message
+              </label>
+            </div>
+          </div>
+          <div class="">
+            <div class="checkbox">
+              <label style="font-weight: 100;">
+                <input type="checkbox" id="">
+                sort
               </label>
             </div>
           </div>
