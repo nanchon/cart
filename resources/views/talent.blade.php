@@ -2,6 +2,15 @@
 
 @section('content')
 <div class="container">
+  <div class="page-header">
+    <h1>List sample <small></small></h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-right">
+    <a href="/talent/create" class="btn btn-primary" style="margin:20px;">to Create</a>
+    </div>
+  </div>
+
   <form id="search" class="form-horizontal">
     <div class="form-group">
       <label for="inputPassword" class="col-sm-2 control-label">office</label>
@@ -24,9 +33,10 @@
       <div class="panel-body">
         <table class="table table-striped task-table">
           <thead>
-            <th>name</th>
+            <th>name<span class="caret"></span></th>
             <th>sex</th>
             <th>office</th>
+            <th>action</th>
           </thead>
           <tbody>
           @foreach ($talents as $talent)
@@ -37,8 +47,14 @@
               <td class="col-md-2">
                 <div>{{ $talent->getSex() }}</div>
               </td>
-              <td class="col-md-8">
+              <td class="col-md-7">
                 <div>{{ $talent->office->name }}</div>
+              </td>
+              <td class="col-md-1">
+                <form method="post" action="/talent/destroy/{{ $talent->id }}">
+                  <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                  <input type="submit" value="Delete" class="btn btn-danger btn-sm btn-destroy" onclick='return confirm("よろしいですか？");'>
+                </form>
               </td>
             </tr>
           @endforeach

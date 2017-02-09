@@ -10,6 +10,8 @@ class Talent extends Model
 {
   protected $table = 'talents';
 
+  protected $fillable = array('name', 'sex', 'office_id');
+
   public function office()
   {
     return $this->belongsTo('App\Office');
@@ -18,5 +20,10 @@ class Talent extends Model
   public function getSex()
   {
     return ($this->sex == SEX_MEN) ? '男' : '女' ;
-  }  
+  }
+
+  public static function getSexList()
+  {
+    return [SEX_MEN => '男', SEX_WOMEN => '女'];
+  }
 }

@@ -23,4 +23,5 @@ Route::group(['middleware' => 'auth'], function()
 {
   Route::resource('talent', 'TalentController');
   Route::resource('office', 'OfficeController');
+  Route::post('talent/destroy/{id}','TalentController@destroy');
 });
